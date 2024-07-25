@@ -1,0 +1,15 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# shinyExtendedTask
+
+The goal of `{shinyExtendedTask}` is to demonstrate the use of shiny
+ExtendedTask API:
+
+1.  [Normal
+    app](https://github.com/DivadNojnarg/shinyExtendedTask/blob/main/bad/app.R):
+    slow, can’t scale with multiple users.
+
+2.  [Extended
+    API](https://github.com/DivadNojnarg/shinyExtendedTask/tree/main/good/app.R):
+    send task in the background, can scale with multiple users.
