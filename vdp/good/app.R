@@ -76,7 +76,11 @@ server <- function(input, output) {
     function(...) {
       mirai(
         {
-          conds <- replicate(10, sample(seq(-1, 1, by = 0.01), size = 2), simplify = FALSE)
+          conds <- replicate(10, {
+            x <- sample(seq(-1, 1, by = 0.01), size = 1)
+            y <- sample(seq(-15, 15, by = 0.1), size = 1)
+            c(x, y)
+          }, simplify = FALSE)
           lapply(conds, \(cond) {
             names(cond) <- c("X", "Y")
             deSolve::ode(cond, times, van_der_pol, mu)
