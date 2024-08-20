@@ -106,8 +106,6 @@ server <- function(input, output) {
 }
 
 ui <- fluidPage(
-  useWaiter(),
-  useWaitress(),
   headerPanel("Van der Pol oscillator"),
   sidebarLayout(
     sidebarPanel(
