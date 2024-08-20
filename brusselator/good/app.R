@@ -114,7 +114,7 @@ ui <- fluidPage(
       h3("Parameters"),
       numericInput("mu", label = "mu", min = 0.0, max = 500,  value = 10, step = 1),
       input_task_button("run", "Run"),
-      input_task_button("run_random", "Simulate 1000 random initial conditions")
+      input_task_button("run_random", "Simulate 10 random initial conditions")
     ),
     mainPanel(
       h3("Simulation results"),
