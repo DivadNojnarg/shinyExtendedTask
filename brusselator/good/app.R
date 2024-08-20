@@ -40,9 +40,6 @@ server <- function(input, output) {
     format(Sys.time(), "%a %b %d %X %Y")
   })
   
-  w <- Waiter$new(id = c("table", "trajectories", "phase"))
-  waitress <- Waitress$new("#multi_phase", infinite = TRUE) # call the waitress
-  
   # Slow but ok and cached
   sim_task <- ExtendedTask$new(
     function(...) mirai({
